@@ -1,0 +1,113 @@
+---
+title: "Patrick Oster"
+description: |
+  Welcome to my website. I hope you enjoy it! The home page is under construction, so here are some histograms I've made for now.
+site: radix::radix_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(datasets)
+library(ggthemr)
+library(knitr)
+data("state")
+ggthemr("light")
+```
+
+# US Population Statistics Circa 1970
+```{r}
+data <- as.data.frame(state.x77, row.names = FALSE)
+df <- data.frame(state = state.name,
+                 abb = state.abb,
+                 region = state.region,
+                 division = state.division,
+                 area = state.area,
+                 center.long = state.center['x'],
+                 center.lat = state.center['y'],
+                 data)
+rm(data, state.name, state.abb, state.region, state.division, state.area, state.center, state.x77)
+```
+
+```{r}
+df.num <- df %>% select(Area,
+                        area, 
+                        Population, 
+                        Income, 
+                        Life.Exp, 
+                        HS.Grad, 
+                        Illiteracy, 
+                        Murder, 
+                        Frost)
+
+kable(cor(df.num))
+mod <- lm(Life.Exp~Murder+HS.Grad, df)
+```
+
+
+```{r}
+ggplot(df, aes(x = area, group = region)) + 
+  geom_histogram(aes(fill = region)) +
+  labs(title = "Distribution of Land Area among 50 US States", 
+       x = "Area (in square miles)", 
+       y = "Count of States")
+
+ggplot(df, aes(x = Population, group = region)) + 
+  geom_histogram(aes(fill = region)) +
+  labs(title = "Distribution of Population (1975)", 
+       x = "Population (in thousands)", 
+       y = "Count of States")
+```
+
+```{r}
+ggplot(df, aes(x = Population, y = Murder)) + 
+  geom_point() + 
+  geom_smooth()
+
+ggplot(df, aes(x = Life.Exp, y = Murder)) + 
+  geom_point() + 
+  geom_smooth()
+```
+
+```{r}
+ggplot(df, aes(x = HS.Grad, group = region)) + 
+  geom_histogram(aes(fill = region)) +
+  labs(title = "Distribution of High School Graduation Rate (1970)", 
+       x = "Percent with HS Diploma", 
+       y = "Count of States")
+
+ggplot(df, aes(x = Income, y = HS.Grad)) + 
+  geom_point() + 
+  geom_smooth()
+
+ggplot(df, aes(x = Illiteracy, y = HS.Grad)) + 
+  geom_point() + 
+  geom_smooth()
+```
+
+```{r}
+ggplot(df, aes(x = Life.Exp, y = Income)) + 
+  geom_point() + 
+  geom_smooth()
+```
+
+```{r}
+ggplot(df, aes(x = Frost, group = region)) + 
+  geom_histogram(aes(fill = region)) +
+  labs(title = "Distribution of 'Frost' (1931-1960)", 
+       x = "Average # of Days with Temp below Freezing", 
+       y = "Count of States",
+       caption = "Measurements from Capital or Large City")
+
+ggplot(df, aes(x = Frost, y = Murder)) + 
+  geom_point() + 
+  geom_smooth()
+
+ggplot(df, aes(x = Illiteracy, y = HS.Grad)) + 
+  geom_point() + 
+  geom_smooth()
+```
+
+
+
+

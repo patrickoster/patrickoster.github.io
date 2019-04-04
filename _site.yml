@@ -1,0 +1,34 @@
+name: "github"
+title: "P. Oster"
+description: |
+  patrickoster
+output_dir: "."
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "R Notes"
+      menu:
+        - text: "Writing Functions"
+          href: writing_functions.html
+        - text: "LaTeX Basics"
+          href: latex_basics.html
+    - text: "Projects"
+      menu:
+        - text: "National Parks"
+          href: npv/npv.html
+        - text: "Factor Analysis"
+          href: factor_analysis.html
+    - text: "Resources"
+      menu:
+        - text: "R Resources"
+          href: r_resources.html
+        - text: "Markdown Resources"
+          href: output_resources.html
+        - text: "All Resources"
+          href: resources.html
+output: 
+  radix::radix_article:
+    #css: mainstyle.css
