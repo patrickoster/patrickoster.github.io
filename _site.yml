@@ -8,7 +8,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "About"
-      href: docs/about.html
+      href: about.html
     - text: "R Notes"
       menu:
         - text: "Writing Functions"
