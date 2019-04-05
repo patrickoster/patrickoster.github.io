@@ -1,7 +1,7 @@
 ---
 title: "Patrick Oster"
 description: |
-  Welcome to my website. I hope you enjoy it! Home page is under construction for now.
+  Welcome! This site is a collection of projects, coursework, notes & resources which I have created over during my graduate studies at LUC. Take a look around & enjoy! The site will be under construction while I complete my studies. Feel free to email poster@luc.edu with any inquiries.
 site: radix::radix_website
 ---
 
