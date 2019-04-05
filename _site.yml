@@ -9,6 +9,14 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Coursework"
+      menu:
+        - text: "Categorical Data Analysis"
+          href: https://patrickoster.github.io/cda
+        - text: "Non-Parametric Statistics"
+          href: https://patrickoster.github.io/npar
+        - text: "Multivariate Statistics"
+          href: https://patrickoster.github.io/mvar
     - text: "R Notes"
       menu:
         - text: "Writing Functions"
