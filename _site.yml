@@ -9,6 +9,10 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Projects"
+      menu:
+        - text: "Datafest"
+          href: https://patrickoster.github.io/datafest
     - text: "Courses"
       menu:
         - text: "Categorical Data Analysis"
