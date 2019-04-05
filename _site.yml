@@ -18,6 +18,7 @@ navbar:
         - text: "Non-Parametric Statistics"
           href: https://patrickoster.github.io/npar
     - text: "R Notes"
+      href: https://patrickoster.github.io/webr
       menu:
         - text: "Writing Functions"
           href: writing_functions.html
