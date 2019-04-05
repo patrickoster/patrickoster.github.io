@@ -21,23 +21,17 @@ navbar:
       href: https://patrickoster.github.io/webr
       menu:
         - text: "Writing Functions"
-          href: writing_functions.html
+          href: https://patrickoster.github.io/webr/writing_functions.html
         - text: "LaTeX Basics"
-          href: latex_basics.html
-    - text: "Projects"
-      menu:
-        - text: "National Parks"
-          href: npv/npv.html
-        - text: "Factor Analysis"
-          href: factor_analysis.html
+          href: https://patrickoster.github.io/webr/latex_basics.html
     - text: "Resources"
       menu:
         - text: "R Resources"
-          href: r_resources.html
+          href: https://patrickoster.github.io/webr/r_resources.html
         - text: "Markdown Resources"
-          href: output_resources.html
+          href: https://patrickoster.github.io/webr/output_resources.html
         - text: "All Resources"
-          href: resources.html
+          href: https://patrickoster.github.io/webr/resources.html
 output: 
   radix::radix_article:
     #css: mainstyle.css
