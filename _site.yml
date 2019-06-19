@@ -23,8 +23,6 @@ navbar:
           href: https://patrickoster.github.io/npar
     - text: "R Notes"
       menu:
-        - text: "Writing Functions"
-          href: https://patrickoster.github.io/webr/writing_functions.html
         - text: "LaTeX Basics"
           href: https://patrickoster.github.io/webr/latex_basics.html
     - text: "Resources"
