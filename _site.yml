@@ -12,27 +12,19 @@ navbar:
     - text: "Projects"
       menu:
         - text: "Datafest"
-          href: https://patrickoster.github.io/datafest
-    - text: "Courses"
+          href: https://patrickoster.github.io/applied-statistics/datafest
+    - text: "Coursework"
       menu:
-        - text: "Categorical Data Analysis"
-          href: https://patrickoster.github.io/cda
-        - text: "Multivariate Statistics"
-          href: https://patrickoster.github.io/mvar
-        - text: "Non-Parametric Statistics"
-          href: https://patrickoster.github.io/npar
-    - text: "R Notes"
+        - text: "CDA"
+          href: https://patrickoster.github.io/applied-statistics/cda
+        - text: "NPAR"
+          href: https://patrickoster.github.io/applied-statistics/npar
+        - text: "MVAR"
+          href: https://patrickoster.github.io/applied-statistics/mvar
+    - text: "Notes"
       menu:
-        - text: "LaTeX Basics"
-          href: https://patrickoster.github.io/webr/latex_basics.html
-    - text: "Resources"
-      menu:
-        - text: "R Resources"
-          href: https://patrickoster.github.io/webr/r_resources.html
-        - text: "Markdown Resources"
-          href: https://patrickoster.github.io/webr/output_resources.html
-        - text: "All Resources"
-          href: https://patrickoster.github.io/webr/resources.html
+        - text: "R Markdown Notes"
+          href: https://patrickoster.github.io/applied-statistics/notes/webr
 output: 
   radix::radix_article:
     #css: mainstyle.css
