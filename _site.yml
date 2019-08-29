@@ -12,7 +12,7 @@ navbar:
     - text: "Projects"
       menu:
         - text: "Datafest"
-          href: https://patrickoster.github.io/applied-statistics/datafest
+          href: https://patrickoster.github.io/applied-statistics/rugby
     - text: "Coursework"
       menu:
         - text: "CDA"
@@ -24,7 +24,17 @@ navbar:
     - text: "Notes"
       menu:
         - text: "R Markdown Notes"
-          href: https://patrickoster.github.io/applied-statistics/notes/webr
+          href: https://patrickoster.github.io/applied-statistics/webr
+    - text: "Resources"
+      menu:
+        - text: "R Links"
+          href: https://patrickoster.github.io/applied-statistics/r_resources
+        - text: "R Output"
+          href: https://patrickoster.github.io/applied-statistics/output_resources
+        - text: "Latex"
+          href: https://patrickoster.github.io/applied-statistics/latex_basics
+        - text: "General"
+          href: https://patrickoster.github.io/applied-statistics/resources
 output: 
   radix::radix_article:
     #css: mainstyle.css
