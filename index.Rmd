@@ -11,8 +11,11 @@ library(tidyverse)
 library(datasets)
 library(ggthemr)
 library(knitr)
+
 data("state")
 ggthemr("light")
 ```
+
+**Here's a gif!**  
 
 ![Rugby Player Tracker](figures/rugby_player_tracker.gif)
